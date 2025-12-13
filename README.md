@@ -12,4 +12,5 @@ Focused on self-hosted, open-source services for personal use.
 
 ## Status✅
 - Milestone 1: Proxmox install 
-- Milestone 2: Storage architecture Unchecked: - [ ] 
+- Milestone 2: Storage architecture Unchecked: - [ ]
+- 
