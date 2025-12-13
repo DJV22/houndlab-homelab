@@ -55,7 +55,7 @@ baseline system configuration.
 ## Network Configuration
 - Static IP assigned to Proxmox host
 - Hostname configured (e.g., `houndlab-pve`)
-- Management access via web UI (port 8006)
+- Management access via web UI (port `8006`)
 
 ---
 
@@ -65,3 +65,43 @@ baseline system configuration.
 ```bash
 apt update && apt full-upgrade
 pveam update
+```
+
+### Repository Configuration
+- Enterprise repository disabled
+- No-subscription repository enabled
+
+### Notifications
+- Email notifications configured for system alerts
+
+---
+
+## Storage Layout (Initial)
+
+### ZFS Pool: `rpool`
+Planned datasets:
+- `rpool/vm-disks`
+- `rpool/containers`
+- `rpool/appdata`
+- `rpool/backups`
+
+---
+
+## Backup Strategy (Initial)
+- VM and LXC backups stored locally on `rpool`
+- Future replication planned to external storage
+
+---
+
+## Validation Checklist
+- [x] Proxmox web UI accessible
+- [x] ZFS mirror healthy
+- [x] System fully updated
+- [x] Reboot tested successfully
+
+---
+
+## Notes
+- PCI passthrough available for future milestones
+- Host configuration is intended to remain stable
+- Services will primarily run in containers
