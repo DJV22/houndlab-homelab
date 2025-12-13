@@ -1,0 +1,20 @@
+# Milestone X — Title
+
+## Goal
+What this milestone accomplishes
+
+## Hardware / Software
+- Proxmox VE 9.1
+- UM890 PRO
+
+## Steps
+1. Step one
+2. Step two
+
+## Validation
+- [ ] Service running
+- [ ] Accessible
+- [ ] Backups configured
+
+## Notes
+Caveats, lessons learned
