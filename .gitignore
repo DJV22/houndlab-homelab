@@ -12,3 +12,26 @@
 
 pkg/
 src/
+# ---- Homelab Safety ----
+*.log
+*.iso
+*.img
+*.qcow2
+*.vmdk
+
+# Secrets
+.env
+.env.*
+secrets/
+*.key
+*.pem
+*.crt
+
+# Proxmox / Backup artifacts
+vzdump/
+backups/
+tmp/
+
+# OS junk
+.DS_Store
+Thumbs.db
