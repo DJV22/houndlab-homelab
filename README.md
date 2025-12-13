@@ -10,6 +10,6 @@ Focused on self-hosted, open-source services for personal use.
 - External 6-bay USB enclosure
 - 3x20TB Seagate IronWolf Pro
 
-## Status
-- Milestone 1: Proxmox install ✅
-- Milestone 2: Storage architecture ✅
+## Status✅
+- Milestone 1: Proxmox install 
+- Milestone 2: Storage architecture Unchecked: - [ ] 
