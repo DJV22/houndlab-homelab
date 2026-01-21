@@ -130,7 +130,7 @@ reboot
 ---
 
 ## Step 9 — Enable Community Repository
-— Open the Repository Manager
+Open the Repository Manager
 
 1. Log in to the Proxmox Web UI
 2. Select your node in the left sidebar
@@ -140,7 +140,7 @@ Node → Updates → Repositories
 
 ---
 
-— Disable the Enterprise Repository
+Disable the Enterprise Repository
 
 1. In the repository list, locate:
 
@@ -156,7 +156,7 @@ enterprise.proxmox.com
 
 ---
 
-— Add the No-Subscription Repository
+Add the No-Subscription Repository
 
 1. Click Add
 2. Select No-Subscription
@@ -171,7 +171,7 @@ Proxmox will automatically add the correct repository for your installed release
 
 ---
 
-— Refresh Package Index
+Refresh Package Index
 
 1. Navigate to:
 
