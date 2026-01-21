@@ -130,32 +130,7 @@ reboot
 ---
 
 ## Step 9 — Enable Community Repository
-
-### Add No-Subscription Repo
-```bash
-nano /etc/apt/sources.list.d/pve-no-subscription.list
-```
-
-Add:
-```text
-deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
-```
-
-### Disable Enterprise Repo
-```bash
-nano /etc/apt/sources.list.d/pve-enterprise.list
-```
-
-Comment out:
-```text
-# deb https://enterprise.proxmox.com/debian/pve bookworm pve-enterprise
-```
-
-### Update
-```bash
-apt update && apt full-upgrade -y
-```
-## Step 1 — Open the Repository Manager
+— Open the Repository Manager
 
 1. Log in to the Proxmox Web UI
 2. Select your node in the left sidebar
@@ -165,7 +140,7 @@ Node → Updates → Repositories
 
 ---
 
-## Step 2 — Disable the Enterprise Repository
+— Disable the Enterprise Repository
 
 1. In the repository list, locate:
 
@@ -181,7 +156,7 @@ enterprise.proxmox.com
 
 ---
 
-## Step 3 — Add the No-Subscription Repository
+— Add the No-Subscription Repository
 
 1. Click Add
 2. Select No-Subscription
@@ -196,7 +171,7 @@ Proxmox will automatically add the correct repository for your installed release
 
 ---
 
-## Step 4 — Refresh Package Index
+— Refresh Package Index
 
 1. Navigate to:
 
