@@ -40,9 +40,9 @@ Save and exit.
 ## Step 2 — Proxmox VE Installer Preparation
 
 1. Download the **latest stable Proxmox VE ISO**
+   - proxmox-ve_9.1-1.iso as of 01/21/26
 2. Create a bootable USB using:
    - Rufus (Windows)
-   - Balena Etcher (Cross-platform)
 
 Use:
 - Partition scheme: GPT
@@ -83,15 +83,15 @@ This creates the `rpool` mirrored ZFS pool.
 
 ### Hostname
 ```
-pve01.houndlab.local
+houndlab.local
 ```
 
 ### Static IP (Example)
 
 | Setting | Value |
 |------|------|
-| IP Address | 192.168.10.10 |
-| Gateway | 192.168.10.1 |
+| IP Address | 192.168.1.2 |
+| Gateway | 192.168.1.1 |
 | DNS | Temporary (router or public) |
 
 DNS will be migrated to Pi-hole in later milestones.
@@ -109,7 +109,7 @@ DNS will be migrated to Pi-hole in later milestones.
 
 After reboot, access:
 ```
-https://192.168.10.10:8006
+https://192.168.1.2:8006
 ```
 
 Login as:
