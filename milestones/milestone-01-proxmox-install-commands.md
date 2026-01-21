@@ -155,6 +155,85 @@ Comment out:
 ```bash
 apt update && apt full-upgrade -y
 ```
+## Step 1 — Open the Repository Manager
+
+1. Log in to the Proxmox Web UI
+2. Select your node in the left sidebar
+3. Navigate to:
+
+Node → Updates → Repositories
+
+---
+
+## Step 2 — Disable the Enterprise Repository
+
+1. In the repository list, locate:
+
+enterprise.proxmox.com
+
+2. Select the entry
+3. Click Disable
+
+### Expected Result
+
+- Status shows Disabled
+- No enterprise authentication errors during updates
+
+---
+
+## Step 3 — Add the No-Subscription Repository
+
+1. Click Add
+2. Select No-Subscription
+3. Confirm when prompted
+
+Proxmox will automatically add the correct repository for your installed release (for example, bookworm).
+
+### Expected Result
+
+- No-Subscription repository is Enabled
+- Enterprise repository remains Disabled
+
+---
+
+## Step 4 — Refresh Package Index
+
+1. Navigate to:
+
+Node → Updates
+
+2. Click Refresh
+
+### Expected Result
+
+- Update completes without errors
+- No subscription warnings related to repositories
+
+---
+
+## Verification Checklist
+
+- Enterprise repository disabled
+- No-Subscription repository enabled
+- Updates refresh successfully
+- No enterprise authentication errors
+
+---
+
+## Notes
+
+- Repository configuration persists across reboots
+- Major Proxmox upgrades typically preserve repository settings
+- This does not remove the Web UI subscription banner (that is a separate UI-only change)
+
+---
+
+## Summary
+
+Enterprise repo disabled  
+No-Subscription repo enabled  
+Web UI only (no shell access required)  
+Safe and standard for homelab use
 
 ---
 
