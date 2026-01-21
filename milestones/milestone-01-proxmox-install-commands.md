@@ -40,7 +40,7 @@ Save and exit.
 ## Step 2 — Proxmox VE Installer Preparation
 
 1. Download the **latest stable Proxmox VE ISO**
-   - proxmox-ve_9.1-1.iso as of 01/21/26
+   - proxmox-ve_9.1-1.iso
 2. Create a bootable USB using:
    - Rufus (Windows)
 
