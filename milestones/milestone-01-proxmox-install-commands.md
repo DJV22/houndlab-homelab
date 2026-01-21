@@ -149,11 +149,6 @@ enterprise.proxmox.com
 2. Select the entry
 3. Click Disable
 
-### Expected Result
-
-- Status shows Disabled
-- No enterprise authentication errors during updates
-
 ---
 
 Add the No-Subscription Repository
@@ -164,11 +159,6 @@ Add the No-Subscription Repository
 
 Proxmox will automatically add the correct repository for your installed release (for example, bookworm).
 
-### Expected Result
-
-- No-Subscription repository is Enabled
-- Enterprise repository remains Disabled
-
 ---
 
 Refresh Package Index
@@ -178,37 +168,6 @@ Refresh Package Index
 Node → Updates
 
 2. Click Refresh
-
-### Expected Result
-
-- Update completes without errors
-- No subscription warnings related to repositories
-
----
-
-## Verification Checklist
-
-- Enterprise repository disabled
-- No-Subscription repository enabled
-- Updates refresh successfully
-- No enterprise authentication errors
-
----
-
-## Notes
-
-- Repository configuration persists across reboots
-- Major Proxmox upgrades typically preserve repository settings
-- This does not remove the Web UI subscription banner (that is a separate UI-only change)
-
----
-
-## Summary
-
-Enterprise repo disabled  
-No-Subscription repo enabled  
-Web UI only (no shell access required)  
-Safe and standard for homelab use
 
 ---
 
