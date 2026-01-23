@@ -171,17 +171,17 @@ Node → Updates
 
 ---
 Remove No Subscription Banner
-   Open an SSh connection to your homelab
-   ssh root@192.168.1.1
-      go to working directory
-      `cd /usr/share/javascript/proxmox-widget-toolkit/`
-      backup the file intended to be changed in this case it will be proxmoxlib.js
-      `cp proxmoxlib.js proxmoxlib.js.bak`
-      Edit the file
-      `nano proxmoxlib.js`
-      Do a search for "no valid subscription" using "ctrl + w"
 
-      Find the text containing "Ext.Msg.show" and add the following before it
+Open an SSh connection to your homelab
+   ssh root@192.168.1.1
+
+   `cd /usr/share/javascript/proxmox-widget-toolkit/`
+   backup the file intended to be changed in this case it will be proxmoxlib.js
+   `cp proxmoxlib.js proxmoxlib.js.bak`
+   
+   no valid subscription" using "ctrl + w"
+   
+   Find the text containing "Ext.Msg.show" and add the following before it
       `void({ //`
       It should look like this
       `void({ //Ext.Msg.show`
