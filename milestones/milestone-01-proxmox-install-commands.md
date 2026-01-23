@@ -170,7 +170,6 @@ Node → Updates
 2. Click Refresh
 
 ---
----
 Remove No Subscription Banner
    Open an SSh connection to your homelab
    ssh root@192.168.1.1
