@@ -41,7 +41,7 @@ pveam download local debian-12-standard_*.tar.zst
 
 ### Create Container
 ```bash
-pct create 120 local:vztmpl/debian-12-standard_*.tar.zst \
+pct create 120 local:vztmpl/debian-13-standard_13.1-2_amd64.tar.zst \
   --hostname pihole \
   --cores 2 \
   --memory 2048 \
