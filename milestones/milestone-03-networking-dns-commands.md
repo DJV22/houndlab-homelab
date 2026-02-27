@@ -36,7 +36,7 @@ This milestone establishes **name resolution and traffic control** for all futur
 ```bash
 pveam update
 pveam available | grep debian
-pveam download local debian-12-standard_*.tar.zst
+pveam download local debian-13-standard_13.1-2_amd64.tar.zst
 ```
 
 ### Create Container
